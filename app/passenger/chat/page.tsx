@@ -48,7 +48,7 @@ interface RiderDetailsType {
   avatar: string;
 }
 
-export default function MessagingPage(): JSX.Element {
+export default function MessagingPage(){
   const [messages, setMessages] = useState<MessageType[]>([]);
   const [loading, setLoading] = useState(true);
   const [chatId, setChatId] = useState<string | null>(null);
