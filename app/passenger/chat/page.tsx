@@ -335,7 +335,7 @@ type QuickButtonProps = {
   onClick: () => void;
 };
 
-const QuickButton = memo(({ text, onClick }: QuickButtonProps): JSX.Element => (
+const QuickButton = memo(({ text, onClick }: QuickButtonProps) => (
   <Button variant="secondary" className="min-w-[10rem]" onClick={onClick}>
     {text}
   </Button>
