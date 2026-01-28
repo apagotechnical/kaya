@@ -341,7 +341,7 @@ const QuickButton = memo(({ text, onClick }: QuickButtonProps) => (
   </Button>
 ));
 
-function Message({ sender, content, timestamp }: { sender: string; content: string; timestamp?: string }){
+function Message({ sender, content, timestamp }: { sender: string; content: string; timestamp?: string }) {
   return (
     <div className={cn("message", { "message-me": sender === "me", "message-rider": sender === "rider" })}>
       <p>{content}</p>
